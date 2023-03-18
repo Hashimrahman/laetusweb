@@ -203,6 +203,7 @@ nav ul li ul li a {
   right: 0;
   height: 70px;
   width: 70px;
+  z-index: 3;
 }
 
 @media only screen and (max-width: 800px) {
@@ -301,10 +302,11 @@ nav ul li ul li a {
 .navigation – the outer wrapper for the navbar. Specifies the height and color, and will stretch the full width of the viewport.
 */
 .navigation {
+  padding-top: 1rem;
   height: 70px;
   background: hsl(0, 0%, 0%);
   width: 100%;
-  z-index: 2;
+  z-index: 4;
 }
 
 .connect-btn {
@@ -397,7 +399,11 @@ transform: scale(1.5) translateY(5rem);
 }
 
 
-
+.hero-icon li{
+  padding-bottom: 0rem;
+  margin-top: 2rem;
+  transform: translateY(15rem);
+}
 
 
 
@@ -549,6 +555,11 @@ transform: scale(1.5) translateY(5rem);
     transform: translateX(0.5rem);
     transform: translateY(-20rem);
   }
+  .hero-icon li{
+    padding-bottom: 0rem;
+    margin-top: 2rem;
+    transform: translateY(-10rem) scale(0.70) translateX(-9rem);
+  }
 }
 
 @media (max-width: 640px) {
@@ -586,10 +597,11 @@ transform: scale(1.5) translateY(5rem);
 }
 
 
+
 .clients .slide-track{
   animation: scroll 20s linear infinite ;
   display: flex;
-  width: calc(250px * 14);
+  width: fit-content;
 }
 .clients .clients-slide{
   height: 100%;
@@ -632,6 +644,7 @@ color: #000000;
   display: none;
   margin-top: 0px;
   
+  
 }
   .slider{
     max-height: 10rem;
@@ -656,7 +669,8 @@ color: #000000;
   
 }
 .slide-new h1{
-  
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .slider{
@@ -672,10 +686,9 @@ color: #000000;
 }
 
 
-
 .slide-track{
   display: flex;
-  width: auto;
+  width: fit-content;
   animation: slide-scroll 60s linear infinite;
 }
 
@@ -684,7 +697,7 @@ color: #000000;
     transform: translateX(0);
   }
   100%{
-    transform: translateX(calc(-250px *4));
+    transform: translateX(-100%);
   }
 }
 
@@ -710,6 +723,13 @@ color: #000000;
   background-color: #000;
   margin-top: 150px;
 }
+
+.service-head{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
 
 .services-grid {
   display: grid;
@@ -788,13 +808,16 @@ color: #000000;
 }
 
 .services-item h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  
   font-size: 2.4rem;
-  font-weight: 500;
+  font-weight: bold;
   color: white;
   text-align: center;
 }
 
 .services-item p {
+  
   font-size: 1rem;
   line-height: 1.8;
   color: #e4e4e4;
@@ -814,6 +837,11 @@ color: #000000;
 
 /*  */
 /* Projects */
+
+.project h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
 
 #projects-carousel {
   position: relative;
@@ -858,11 +886,7 @@ color: #000000;
   transform: scale(1.01);
 }
 
-.carousel-item h3 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin: 1.5rem;
-}
+
 
 .carousel-details {
   text-align: center;
@@ -1043,22 +1067,22 @@ color: #000000;
   transform: rotateY(calc(90deg * var(--i))) translateZ(37.5px);
   background: linear-gradient(
     to bottom,
-    hsl(330, 3.13%, 25.1%) 0%,
-    hsl(177.27, 21.71%, 32.06%) 5.5%,
-    hsl(176.67, 34.1%, 36.88%) 12.1%,
-    hsl(176.61, 42.28%, 40.7%) 19.6%,
-    hsl(176.63, 48.32%, 43.88%) 27.9%,
-    hsl(176.66, 53.07%, 46.58%) 36.6%,
-    hsl(176.7, 56.94%, 48.91%) 45.6%,
-    hsl(176.74, 62.39%, 50.91%) 54.6%,
-    hsl(176.77, 69.86%, 52.62%) 63.4%,
-    hsl(176.8, 76.78%, 54.08%) 71.7%,
-    hsl(176.83, 83.02%, 55.29%) 79.4%,
-    hsl(176.85, 88.44%, 56.28%) 86.2%,
-    hsl(176.86, 92.9%, 57.04%) 91.9%,
-    hsl(176.88, 96.24%, 57.59%) 96.3%,
-    hsl(176.88, 98.34%, 57.93%) 99%,
-    hsl(176.89, 99.07%, 58.04%) 100%
+    hsl(270, 3%, 25%) 0%,
+    hsl(266, 11%, 27%) 5.5%,
+    hsl(266, 18%, 30%) 12.1%,
+    hsl(266, 24%, 32%) 19.6%,
+    hsl(265, 30%, 35%) 27.9%,
+    hsl(265, 34%, 37%)36.6%,
+    hsl(265, 38%, 39%) 45.6%,
+    hsl(265, 42%, 42%) 54.6%,
+    hsl(266, 45%, 44%) 63.4%,
+    hsl(266, 48%, 46%) 71.7%,
+    hsl(266, 50%, 48%)79.4%,
+    hsl(266, 54%, 51%) 86.2%,
+    hsl(266, 62%, 53%) 91.9%,
+    hsl(266, 70%, 55%) 96.3%,
+    hsl(265, 80%, 58%)99%,
+    hsl(265, 90%, 60%) 100%
   );
 }
 
@@ -1078,13 +1102,13 @@ color: #000000;
 /* u can choose any size */
   width: 175px;
   height: 175px;
-  background: hsl(176.61, 42.28%, 40.7%) 19.6%;
+  background:     hsl(266, 62%, 53%) 91.9%;
   transform: translateZ(-90px);
   filter: blur(10px);
   box-shadow: 0 0 10px #323232,
-              0 0 20px hsl(176.61, 42.28%, 40.7%) 19.6%,
+              0 0 20px     hsl(266, 62%, 53%) 91.9%,
               0 0 30px #323232,
-              0 0 40px hsl(176.61, 42.28%, 40.7%) 19.6%;
+              0 0 40px     hsl(266, 62%, 53%) 91.9%;
 }
 
 
@@ -1249,6 +1273,7 @@ color: #000000;
   transition: .5s;
 }
 
+
 .login-box .user-box input:focus ~ label,
 .login-box .user-box input:valid ~ label {
   top: -20px;
@@ -1354,20 +1379,20 @@ color: #000000;
   top: 0;
   left: 20rem;
   opacity: 0;
-  animation: display 20s infinite;
+  animation: display 10s infinite;
 }
 
 img:nth-child(2) {
-  animation-delay: 4s;
+  animation-delay: 2s;
 }
 img:nth-child(3) {
-  animation-delay: 8s;
+  animation-delay: 4s;
 }
 img:nth-child(4) {
-  animation-delay: 12s;
+  animation-delay: 6s;
 }
 img:nth-child(5) {
-  animation-delay: 16s;
+  animation-delay: 8s;
 }
 
 #except{

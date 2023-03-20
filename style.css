@@ -729,6 +729,8 @@ color: #000000;
 .service-head{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  color: white;
+  font-size: xx-larger;
 }
 
 
@@ -755,6 +757,7 @@ color: #000000;
   overflow: hidden;
   transition: all .3s ease-out;
   min-height: 110%;
+  box-shadow: 7.11421px 7.11421px 10.6713px rgba(0, 0, 0, 0.25);
 }
 
 .services-item:hover {
@@ -804,6 +807,7 @@ color: #000000;
   gap: 2rem;
 }
 
+
 .service-icon {
   margin-top: 1rem;
   height: 5rem;
@@ -811,9 +815,7 @@ color: #000000;
 
 .services-item h3 {
   font-family: Arial, Helvetica, sans-serif;
-  
-  font-size: x-large;
-  font-weight: bold;
+  font-size: large;
   color: white;
   text-align: center;
 }
@@ -821,7 +823,7 @@ color: #000000;
 .services-item p {
   font-family: 'Inter';
   font-size: 1.2rem;
-  line-height: 1.8;
+  line-height: 2;
   color: #e4e4e4;
   text-align: center;
   max-width: 75%;
@@ -1290,12 +1292,26 @@ color: #000000;
   background: transparent;
 }
 
+.user-text{
+  font-size: small; !important
+}
+
 .login-box .user-box label {
   position: absolute;
   top: 0;
   left: 0;
   padding: 10px 0;
   font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.login-box .user-box .user-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 13px;
   color: #fff;
   pointer-events: none;
   transition: .5s;
@@ -1309,6 +1325,7 @@ color: #000000;
   color: #bdb8b8;
   font-size: 12px;
 }
+
 
 .login-box form a {
   position: relative;
@@ -1465,7 +1482,7 @@ img:nth-child(5) {
   background-color: #0c0c0c;
   text-align: center;
   color: white;
-  font-size: x-large;
+  font-size: large;
   font-family: Arial, Helvetica, sans-serif;
   height: 300px;
 }
@@ -1498,7 +1515,7 @@ img:nth-child(5) {
 .logos-container img {
   display: inline-block;
   align-items: center;
-  height: 75px;
+  height: 50px;
   margin: 15px;
   top: 0;
 }
